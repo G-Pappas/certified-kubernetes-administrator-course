@@ -58,9 +58,9 @@ In this section, we will take a look at configuring configmaps in applications
       image: simple-webapp-color
       ports:
       - containerPort: 8080
-      envFrom:
-      - configMapRef:
-          name: app-config
+      - envFrom:
+        - configMapRef:
+            name: app-config
    ```
    ```
    apiVersion: v1
